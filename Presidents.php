@@ -13,15 +13,18 @@
 <body>
     <h2>Presidents</h2>
     <?php
+    // Array of first five presidents
     $presidents = array("George Washington", 
                         "John Adams",
                         "Thomas Jefferson",
                         "James Monroe");
+    // Array of the presidents years in office
     $yearsInOffice = array("1789 to 1797",
                           "1797 to 1801",
                           "1801 to 1809",
                           "1809 to 1817",
                           "1817 to 1825");
+    // Fills in the name and term with the corresponding president
     $outputTemplate = "<p>President [NAME] served from [TERM]</p>\n";
     foreach ($presidents as $sequence => $name) {
         $tempString = str_replace("[NAME]", $name, $outputTemplate);

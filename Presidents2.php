@@ -13,9 +13,11 @@
 <body>
     <h2>Presidents 2</h2>
     <?php
+    // String of the first 5 presidents
     $presidents = "George Washington;John Adams;Thomas Jefferson;James Monroe";
     $thisPresident = strtok($presidents, ";");
     while ($thisPresident != NULL) {
+        // Displays president names with line breaks
         echo "$thisPresident<br>";
         $thisPresident = strtok(";");
     }
